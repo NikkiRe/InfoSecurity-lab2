@@ -1,2 +1,2 @@
 LAB2-CVE-2021-43798-CONTROLLED-FILE
-Synthetic training evidence, contains no personal data or secrets.
+Учебный файл для проверки обхода каталога; персональных данных и секретов нет.
