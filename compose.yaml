@@ -1,0 +1,14 @@
+name: infosec-grafana-cve-20261019
+services:
+  vulnerable:
+    image: grafana/grafana:8.3.0
+    ports:
+      - "127.0.0.1:18083:3000"
+    volumes:
+      - ./fixture.txt:/tmp/lab2-proof.txt:ro
+  fixed:
+    image: grafana/grafana:8.3.1
+    ports:
+      - "127.0.0.1:18084:3000"
+    volumes:
+      - ./fixture.txt:/tmp/lab2-proof.txt:ro
